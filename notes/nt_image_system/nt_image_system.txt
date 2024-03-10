@@ -1,0 +1,14 @@
+image array structure:
+
+image_array = [
+				[idle, idle hit box](max v.1)
+				[move,move hit box](max v.1)
+				[crouch, crouch hit box](max v.1)
+				[jump,jump hit box](max v.1)
+				
+				[weak atk, weak atk hitbox](max v.1)
+				[strong atk, strong atk hitbox](max v.1)
+				[weak kick, weak kick hitbox,weak kick crouch, weak kick crouch hb](max v.3)
+				[strong kick, strong kick hitbox,strong kick crouch, strong kick crouch hb](max v.3)
+				
+			  ]

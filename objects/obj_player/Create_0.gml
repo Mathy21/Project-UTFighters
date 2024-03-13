@@ -27,13 +27,13 @@ state_array[PLAYER_STATE.CROUCH] = player_crouch_state;
 // Gravity & Collision
 gravity_and_collision = function(){
 	repeat(abs(vspd)){
-		var ground_col = place_meeting(x,y+vspd,par_collision);
+		var ground_col = place_meeting(x,y+sign(vspd),par_collision);
 		if(ground_col){
 			vspd = 0;
 			break;
 		}
 		else{
-			vspd += GRAV;	
+			y += sign(vspd);	
 		}
 	}
 }	

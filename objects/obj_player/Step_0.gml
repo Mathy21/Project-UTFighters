@@ -1,1 +1,5 @@
-gravity_and_collision();
+vspd += GRAV;
+
+if(key.up){
+	vspd = 5;	
+}

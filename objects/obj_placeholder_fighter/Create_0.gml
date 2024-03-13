@@ -1,6 +1,6 @@
 event_inherited();
 // Movement
-spd = 1;
+spd = 0.5;
 
 // Image
 image_array = [

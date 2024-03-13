@@ -23,6 +23,7 @@ function player_move_state(){
 		var _dir = point_direction(0,0,(key.right-key.left),(key.down-key.up));	
 		hspd = lengthdir_x(spd,_dir);
 		if(hspd < 0){
+			hspd /=2;
 			animation_start(image_array[1,0],image_array[1,1]);
 		}
 		if(hspd > 0){

@@ -1,2 +1,2 @@
 // Player
-#macro GRAV 0.1
+#macro GRAV 0.2

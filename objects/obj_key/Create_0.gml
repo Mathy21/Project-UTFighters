@@ -21,7 +21,7 @@ right = 0;
 no_key = false;
 
 set_keys = function(_struct){
-	up = keyboard_check(_struct.up);
+	up = keyboard_check_pressed(_struct.up);
 	left = keyboard_check(_struct.left);
 	down = keyboard_check(_struct.down);
 	right = keyboard_check(_struct.right);

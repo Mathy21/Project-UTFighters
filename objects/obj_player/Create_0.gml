@@ -8,6 +8,8 @@ spd = 0;
 hspd = 0;
 vspd = 0;
 max_vspd = 5;
+spc_state_array = ["none","on_air","downed"];
+spc_state = "";
 // Inputs
 // Instance self key object
 key = instance_create_layer(0,0,"Main",obj_key);
@@ -17,7 +19,11 @@ enum PLAYER_STATE {
 	BASE,
 	IDLE,
 	MOVE,
-	CROUCH
+	CROUCH,
+	WEAK_ATK,
+	STRONG_ATK,
+	WEAK_KICK,
+	STRONG_KICK
 }	
 state = PLAYER_STATE.BASE;
 state_array[PLAYER_STATE.BASE] = player_base_state;

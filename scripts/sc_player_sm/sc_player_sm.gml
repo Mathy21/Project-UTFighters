@@ -1,4 +1,7 @@
 function player_change_state(_set_idle){
+	if(key.w_atk){
+		state = PLAYER_STATE.WEAK_ATK;
+	}	
 	if(key.down){
 		state = PLAYER_STATE.CROUCH;
 	}
@@ -10,12 +13,12 @@ function player_change_state(_set_idle){
 	}
 }
 function player_base_state(){
+	spc_state = "none";
 	hspd = 0;
-	vspd = 0;
 	player_change_state(true);	
 }
 function player_idle_state(){
-	animation_start(image_array[0,0],image_array[0,1]);
+	animation_start(image_array[state,0],image_array[state,1]);
 	player_change_state(false);
 }
 function player_move_state(){
@@ -24,10 +27,12 @@ function player_move_state(){
 		hspd = lengthdir_x(spd,_dir);
 		if(hspd < 0){
 			hspd /=2;
-			animation_start(image_array[1,0],image_array[1,1]);
+			animation_start(image_array[state,0],image_array[state,1]);
+			player_change_state(false);
 		}
 		if(hspd > 0){
-			animation_start(image_array[1,2],image_array[1,3]);	
+			animation_start(image_array[state,2],image_array[state,3]);
+			player_change_state(false);
 		}
 	}
 	else{
@@ -35,6 +40,26 @@ function player_move_state(){
 	}
 }
 function player_crouch_state(){
-	
+	spc_state = spc_state_array[3];
+	animation_start(image_array[state,0],image_array[state,1]);
+	if(!key.down){
+		state = PLAYER_STATE.BASE;	
+	}
 }
 
+function player_weak_atk_state(){
+	if(key.down){
+			
+	}
+		else{
+			animation_start(image_array[state,0],image_array[state,1]);	
+		}
+	if(animation_end()){
+		if(spc_state = "crouched"){
+			state = PLAYER_STATE.CROUCH;	
+		}
+			else {
+				state = PLAYER_STATE.BASE;	
+			}
+	}
+}

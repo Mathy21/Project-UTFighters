@@ -8,7 +8,8 @@ spd = 0;
 hspd = 0;
 vspd = 0;
 max_vspd = 5;
-spc_state_array = ["none","on_air","downed"];
+spc_state_array = ["none","on_air","downed","crouched"];
+jumped = true;
 spc_state = "";
 // Inputs
 // Instance self key object
@@ -30,6 +31,7 @@ state_array[PLAYER_STATE.BASE] = player_base_state;
 state_array[PLAYER_STATE.IDLE] = player_idle_state;
 state_array[PLAYER_STATE.MOVE] = player_move_state;
 state_array[PLAYER_STATE.CROUCH] = player_crouch_state;
+state_array[PLAYER_STATE.WEAK_ATK] = player_weak_atk_state;
 // Gravity & Collision
 gravity_and_collision = function(){
 	repeat(abs(vspd)){

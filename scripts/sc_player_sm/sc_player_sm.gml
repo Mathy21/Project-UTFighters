@@ -19,6 +19,7 @@ function player_base_state(){
 }
 function player_idle_state(){
 	animation_start(image_array[state,0],image_array[state,1]);
+	can_draw_hb = true;
 	player_change_state(false);
 }
 function player_move_state(){
@@ -48,13 +49,17 @@ function player_crouch_state(){
 }
 
 function player_weak_atk_state(){
+	if(hitbox == noone){
+		hitbox = instance_create_layer(x,y,"Main",obj_hitbox);
+		hitbox.target = id;
+	}
 	if(key.down){
-			
 	}
 		else{
-			animation_start(image_array[state,0],image_array[state,1]);	
+			animation_start(image_array[state,0],image_array[state,1],image_array[state,2]);
 		}
 	if(animation_end()){
+		hitbox = noone;
 		if(spc_state = "crouched"){
 			state = PLAYER_STATE.CROUCH;	
 		}

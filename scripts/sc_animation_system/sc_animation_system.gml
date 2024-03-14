@@ -1,8 +1,11 @@
-function animation_start(_sprite,_hitbox){
+function animation_start(_sprite,_hurtbox){
 	if(sprite_index != _sprite){
 		image_index = 0;
 		sprite_index = _sprite;
-		mask_index = _hitbox;
+		mask_index = _hurtbox;
+		if(argument_count > 2){
+			hitbox_img = argument[2];	
+		}
 	}
 }
 

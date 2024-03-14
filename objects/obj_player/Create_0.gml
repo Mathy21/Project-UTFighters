@@ -3,6 +3,10 @@ player_num = 0;
 // Image
 image_array = []; // <Put a self character image array here>
 actual_image = 0;
+hitbox_img = noone;
+can_draw_hb = false;
+hitbox = noone;
+atk_states = [];
 // Movement
 spd = 0;
 hspd = 0;
@@ -32,6 +36,11 @@ state_array[PLAYER_STATE.IDLE] = player_idle_state;
 state_array[PLAYER_STATE.MOVE] = player_move_state;
 state_array[PLAYER_STATE.CROUCH] = player_crouch_state;
 state_array[PLAYER_STATE.WEAK_ATK] = player_weak_atk_state;
+
+atk_states = [PLAYER_STATE.WEAK_ATK,
+			  PLAYER_STATE.STRONG_ATK,
+			  PLAYER_STATE.WEAK_KICK,
+			  PLAYER_STATE.STRONG_KICK];
 // Gravity & Collision
 gravity_and_collision = function(){
 	repeat(abs(vspd)){

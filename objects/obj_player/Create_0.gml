@@ -36,6 +36,7 @@ state_array[PLAYER_STATE.IDLE] = player_idle_state;
 state_array[PLAYER_STATE.MOVE] = player_move_state;
 state_array[PLAYER_STATE.CROUCH] = player_crouch_state;
 state_array[PLAYER_STATE.WEAK_ATK] = player_weak_atk_state;
+state_array[PLAYER_STATE.STRONG_ATK] = player_strong_atk_state;
 
 atk_states = [PLAYER_STATE.WEAK_ATK,
 			  PLAYER_STATE.STRONG_ATK,

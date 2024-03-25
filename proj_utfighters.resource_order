@@ -5,8 +5,8 @@
     {"name":"Fonts","order":5,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":6,"path":"folders/Objects.yy",},
-    {"name":"Collision","order":2,"path":"folders/Objects/Collision.yy",},
-    {"name":"Player","order":1,"path":"folders/Objects/Player.yy",},
+    {"name":"Collision","order":3,"path":"folders/Objects/Collision.yy",},
+    {"name":"Player","order":2,"path":"folders/Objects/Player.yy",},
     {"name":"Characters","order":1,"path":"folders/Objects/Player/Characters.yy",},
     {"name":"Hitbox & More","order":1,"path":"folders/Objects/Player/Characters/Hitbox & More.yy",},
     {"name":"Particle Systems","order":3,"path":"folders/Particle Systems.yy",},
@@ -24,6 +24,7 @@
     {"name":"Hurtboxes","order":8,"path":"folders/Sprites/Player/Hurtboxes.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":12,"path":"folders/Timelines.yy",},
+    {"name":"Game Controller","order":1,"path":"folders/Objects/Game Controller.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_hr_placeholder_fighter_crouch","order":3,"path":"sprites/spr_hr_placeholder_fighter_crouch/spr_hr_placeholder_fighter_crouch.yy",},

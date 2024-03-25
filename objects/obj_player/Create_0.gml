@@ -19,6 +19,8 @@ spc_state = "";
 // Instance self key object
 key = instance_create_layer(0,0,"Main",obj_key);
 key.target = id;
+controller = instance_create_layer(0,0,"Main",obj_controller);
+controller.target = id;
 // State Machine
 enum PLAYER_STATE {
 	BASE,

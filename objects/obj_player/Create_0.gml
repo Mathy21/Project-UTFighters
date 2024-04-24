@@ -21,6 +21,11 @@ key = instance_create_layer(0,0,"Main",obj_key);
 key.target = id;
 controller = instance_create_layer(0,0,"Main",obj_controller);
 controller.target = id;
+// Combat
+combo_timer_v = 60;
+combo_timer = 0;
+combo = 0;
+set_combo_timer = true;
 // State Machine
 enum PLAYER_STATE {
 	BASE,
@@ -55,5 +60,20 @@ gravity_and_collision = function(){
 		else{
 			y += sign(vspd);	
 		}
+	}
+}	
+
+// Combo timer system
+combo_timer_start = function(_value){
+	if(set_combo_timer && _value > 0){
+		combo_timer = _value;
+		set_combo_timer = false;
+	}
+	if(_value > 0){
+		_value --;
+	}
+	if(_value <= 0){
+		combo = 0;
+		set_combo_timer = true;
 	}
 }	

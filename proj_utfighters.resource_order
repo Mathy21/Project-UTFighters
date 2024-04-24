@@ -6,6 +6,7 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":6,"path":"folders/Objects.yy",},
     {"name":"Collision","order":3,"path":"folders/Objects/Collision.yy",},
+    {"name":"Game Controller","order":1,"path":"folders/Objects/Game Controller.yy",},
     {"name":"Player","order":2,"path":"folders/Objects/Player.yy",},
     {"name":"Characters","order":1,"path":"folders/Objects/Player/Characters.yy",},
     {"name":"Hitbox & More","order":1,"path":"folders/Objects/Player/Characters/Hitbox & More.yy",},
@@ -24,7 +25,6 @@
     {"name":"Hurtboxes","order":8,"path":"folders/Sprites/Player/Hurtboxes.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":12,"path":"folders/Timelines.yy",},
-    {"name":"Game Controller","order":1,"path":"folders/Objects/Game Controller.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_hr_placeholder_fighter_crouch","order":3,"path":"sprites/spr_hr_placeholder_fighter_crouch/spr_hr_placeholder_fighter_crouch.yy",},
@@ -35,6 +35,7 @@
     {"name":"spr_hr_placeholder_fighter_move_front","order":1,"path":"sprites/spr_hr_placeholder_fighter_move_front/spr_hr_placeholder_fighter_move_front.yy",},
     {"name":"spr_placeholder_fighter_move_back","order":3,"path":"sprites/spr_placeholder_fighter_move_back/spr_placeholder_fighter_move_back.yy",},
     {"name":"spr_placeholder_fighter_crouch","order":4,"path":"sprites/spr_placeholder_fighter_crouch/spr_placeholder_fighter_crouch.yy",},
+    {"name":"sc_timer","order":1,"path":"scripts/sc_timer/sc_timer.yy",},
     {"name":"spr_hr_placeholder_fighter_s_atk","order":5,"path":"sprites/spr_hr_placeholder_fighter_s_atk/spr_hr_placeholder_fighter_s_atk.yy",},
     {"name":"spr_hb_placeholder_fighter_s_atk","order":1,"path":"sprites/spr_hb_placeholder_fighter_s_atk/spr_hb_placeholder_fighter_s_atk.yy",},
     {"name":"spr_placeholder_fighter_s_atk","order":6,"path":"sprites/spr_placeholder_fighter_s_atk/spr_placeholder_fighter_s_atk.yy",},

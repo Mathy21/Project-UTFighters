@@ -63,6 +63,8 @@ function player_weak_atk_state(){
 		else{
 			animation_start(image_array[state,0],image_array[state,1],image_array[state,2]);
 		}
+		combo_timer_start(combo_timer_v);
+		combo++;
 	if(animation_end()){
 		hitbox = noone;
 		if(spc_state = "crouched"){

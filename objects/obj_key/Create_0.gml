@@ -1,3 +1,13 @@
+// Position control
+c_right = false;
+c_up = false;
+c_left = false;
+c_down = false;
+c_timer_v = 120;
+c_r_timer = 0;
+c_u_timer = 0;
+c_l_timer = 0;
+c_d_timer = 0;
 // Main
 target = noone;
 input_p1 = {
@@ -46,3 +56,28 @@ set_keys = function(_struct){
 	else
 		no_key = false;
 }	
+
+key_position_check = function(){
+	if(right){
+		c_right = true;
+		c_r_timer = c_timer_v;
+	}
+	if(up){
+		c_up = true;
+		c_u_timer = c_timer_v;
+	}
+	if(left){
+		c_left = true;
+		c_l_timer = c_timer_v;
+	}
+	if(down){
+		c_down = true;
+		c_d_timer = c_timer_v;
+	}
+}
+
+var_timer = function(_timer,_var){
+	if(_timer > 0){
+		
+	}	
+}

@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_placeholder_fighter_idle",
-    "path": "sprites/spr_placeholder_fighter_idle/spr_placeholder_fighter_idle.yy",
+    "name": "spr_placeholder_fighter_w_atk",
+    "path": "sprites/spr_placeholder_fighter_w_atk/spr_placeholder_fighter_w_atk.yy",
   },
   "spriteMaskId": null,
   "visible": true,

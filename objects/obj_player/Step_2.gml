@@ -1,2 +1,2 @@
 x += hspd;
-y += vspd;
+gravity_and_collision();
